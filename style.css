@@ -1,0 +1,223 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.web-logo > img {
+  height: 30px;
+}
+
+.req-quote {
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: 600;
+}
+
+/* Navigation */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-left: 15px;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Section Styles */
+section {
+  height: auto;
+  width: 100%;
+}
+
+.sec-booking {
+  padding: 30px 0;
+}
+
+.sec-booking-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sec-booking-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-booking-text > h1 {
+  font-size: 3rem;
+  text-align: right;
+}
+
+.sec-booking-text > p {
+  margin-right: 20px;
+}
+
+.booking {
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+}
+
+.booking > p {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+
+.sec-booking-img > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logotypes */
+.logotypes {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Services Section */
+.ser-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Services {
+  background-color: greenyellow;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: auto;
+  padding: 0 20px;
+}
+
+.Services > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .web-logo {
+    margin-bottom: 10px;
+  }
+
+  .req-quote {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .sec-booking-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sec-booking-text > h1 {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+
+  .sec-booking-text > p {
+    margin-right: 0;
+  }
+
+  .booking {
+    margin-top: 20px;
+    width: 150px;
+  }
+
+  .ser-sec {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec-booking {
+    flex-direction: column;
+  }
+
+  .sec-booking-text,
+  .sec-booking-img {
+    width: 100%;
+  }
+
+  .sec-booking-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sec-booking-img > img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .Services > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .req-quote,
+  .booking {
+    width: 100%;
+    font-size: medium;
+  }
+
+  .sec-booking-text > h1 {
+    font-size: 1.5rem;
+  }
+
+  .sec-booking-text > p {
+    margin-right: 0;
+  }
+
+  .sec-booking-img > img {
+    width: 100%;
+    height: auto;
+  }
+}
